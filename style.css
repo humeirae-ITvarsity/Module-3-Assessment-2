@@ -1,0 +1,257 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.body-home {
+  background-image: url(images/background-01.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body-meals {
+  background-image: url(images/background-02.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ----------Header---------- */
+
+.header {
+  background-color: #e0ebeb;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  position: fixed;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header i {
+  float: left;
+  padding: 20px 0px 0px 20px;
+  color: black;
+}
+
+.header img {
+  width: 118px;
+  padding-top: 2px;
+  padding-right: 25px;
+}
+/* ----------Home Page---------- */
+
+#home-logo-img {
+  width: 250px;
+  display: block;
+  margin: auto;
+  padding: 80px 10px 10px 10px;
+}
+
+/* ---Home Page Menu--- */
+.home-menu-item {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px solid grey;
+  padding-top: 20px;
+
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+/* ----------Meals Page---------- */
+#meals {
+  padding-top: 80px;
+}
+
+/* ---Meals Page Menu--- */
+
+.meals-list a {
+  text-decoration: none;
+}
+
+.meals-list-item {
+  border: 5px solid #1a1a1a;
+  margin: 10px;
+}
+
+.meals-list-item h1 {
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  padding-left: 10px;
+}
+
+.meals-list-item i {
+  float: right;
+  color: white;
+  padding-right: 10px;
+}
+
+.meals-list-item p {
+  font-size: 15px;
+  font-style: italic;
+  color: white;
+  margin-top: -7px;
+  padding-left: 10px;
+}
+
+/* ----------Meal Details Page---------- */
+
+#meal {
+  padding-top: 50px;
+}
+
+/* ---Meal Details--- */
+.meal-details img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.meal-details h1 {
+  font-size: 25px;
+  text-align: center;
+  border: 5px solid #1a1a1a;
+  margin: 10px;
+  padding: 5px;
+  color: white;
+}
+
+.meal-details h2 {
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  margin-left: 10px;
+  color: white;
+}
+
+.meal-info {
+  margin-left: 25px;
+  margin-right: 25px;
+  color: white;
+}
+
+.meal-info p {
+  font-size: 17px;
+  display: inline-block;
+  color: white;
+}
+
+.meal-extras label{
+  line-height: 25px;
+  margin-left: 10px;
+  color: white;
+}
+
+.about-meal {
+  padding-top: 20px;
+  color: white;
+}
+
+.about-meal ol{
+  padding-left: 28px;
+  color: white;
+}
+
+/* ----------Responsive Layout---------- */
+@media only screen and (min-width: 600px) {
+  #meals {
+    width: 80%;
+    margin: auto;
+  }
+  #meal {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #meals {
+    width: 60%;
+    margin: auto;
+  }
+  #meal {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #meals {
+    width: 40%;
+    margin: auto;
+  }
+  #meal {
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .body-home{
+    background-image: url('images/background-01.jpeg');
+  }
+  .body-meals{
+    background-image: url('images/background-02.jpeg');
+  }
+  .body-thanks{
+    background-image: url('images/background-03.jpeg');
+  }
+}
+
+/* ----------Form---------- */
+label {
+  color: white;
+}
+
+input[type="text"] {
+  font-size: 18pt;
+  height: 42px;
+  width : 300px;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: #1a1a1a;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: copperplate, papyrus, fantasy;
+}
+input[type=submit]:hover {
+  background-color: cornflowerblue;
+}
+
+/* ----------Thank you page---------- */
+.body-thanks {
+  background-image: url(images/background-03.jpeg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-menu p {
+  text-align: center;
+  font-size: 40px;
+  font-family: cursive;
+  color: #1a1a1a;
+}
